@@ -1,2 +1,1 @@
 test
-src refspec master does not match any.
