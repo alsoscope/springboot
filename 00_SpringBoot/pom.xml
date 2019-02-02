@@ -65,9 +65,7 @@
 		    <groupId>com.zaxxer</groupId>
 		    <artifactId>HikariCP</artifactId>
 		    <version>3.3.0</version>
-		</dependency>
-
-								
+		</dependency>				
 		<!-- 프로젝트 생성 이후 라이브러리 설정 MySQL, JDBC, MyBatis-->
 		
 	</dependencies>
