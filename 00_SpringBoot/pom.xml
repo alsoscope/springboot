@@ -65,7 +65,19 @@
 		    <groupId>com.zaxxer</groupId>
 		    <artifactId>HikariCP</artifactId>
 		    <version>3.3.0</version>
-		</dependency>				
+		</dependency>
+
+		<!-- views/.jsp 처리 위한 라이브러리 (스프링 부트에 내장된 Tomcat은 JSP를 자동으로 처리하지 못하기 때문) -->
+		<!-- tomcat-embed-jasper는 JSP를 처리하는 엔진 역할을 하게된다 -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
 		<!-- 프로젝트 생성 이후 라이브러리 설정 MySQL, JDBC, MyBatis-->
 		
 	</dependencies>

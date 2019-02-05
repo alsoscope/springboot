@@ -5,7 +5,7 @@
 <mapper namespace="org.project.mapper.MemberMapper">
 	
 	<select id="login" resultType="org.project.domain.MemberVO">
-		select * from tbl_member where id=#{userId} and userPw=#{userPw}
+		select * from tbl_member where userId=#{userId} and userPw=#{userPw}
 	</select>
 
 </mapper>

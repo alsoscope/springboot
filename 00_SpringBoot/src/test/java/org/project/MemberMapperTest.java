@@ -10,7 +10,8 @@ public class MemberMapperTest extends ApplicationTests{
 	@Autowired
 	private MemberMapper mapper;
 	
-	@Test
+	//MapperInterface Test
+/*	@Test
 	public void testInsert() throws Exception{
 		MemberVO vo=new MemberVO();
 		
@@ -20,5 +21,13 @@ public class MemberMapperTest extends ApplicationTests{
 		vo.setUserEmail("daisy@ggg");
 		
 		mapper.create(vo);
+	}*/
+	
+	//Mapper XML Test
+	@Test
+	public void testLogin() throws Exception{
+		MemberVO vo=mapper.login("user00", "00");
+		
+		System.out.println("vo : " + vo);
 	}
 }
